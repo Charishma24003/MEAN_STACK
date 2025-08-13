@@ -1,4 +1,31 @@
+
 /* Shared styles */
+/* header{
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background: #1e1e2f;
+        color: white;
+        position: sticky;
+        top: 0;
+        text-align: center;
+        
+} */
+header {
+    background: #1e1e2f;    /* Dark background */
+    padding: 20px;          /* Space inside */
+    text-align: center;     /* Centers text horizontally */
+}
+
+header h1 {
+    color: white;           /* Text color */
+    margin: 0;              /* Remove default space */
+    font-size: 2rem;        /* Bigger font */
+}
+
+
+
 body {
      font-family: Arial, sans-serif; 
      margin: 0; 
