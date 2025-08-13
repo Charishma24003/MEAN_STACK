@@ -33,11 +33,14 @@ header nav{
     display: flex
     gap: 20px;
     padding: 10px 20px;
+    align-items: center;
+
 }
 nav a {
     color: #fdf8f7;
     text-decoration: none;
     margin: 0 15px;
+    font-weight: bolder;
 }
 
 nav a:hover {
@@ -49,6 +52,13 @@ nav a:hover {
     padding: 7px;
 }
 
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .tagline {
     font-size: 24px;
     color: #5D4037;
@@ -58,16 +68,20 @@ nav a:hover {
 
 .about{
     max-width: 800px;
-    margin: 50px 0px 20px 20px;
+    margin: 50px 0px 20px 500px;
     font-size: 25px;
     font-family: cursive;
     padding: 20px;
    color: #FFF3E0;
     /*background-color: #FFF3E0; Light peach background */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     background-color: rgba(75, 74, 74, 0.6);
-  backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.about:hover{
+    transition: 0.5s;
+transform:scale(1.05);
 }
 
 
