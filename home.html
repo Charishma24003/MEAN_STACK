@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Complaint System - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="register.html">Register</a> |
+    <a href="complaints.html">Complaints</a> |
+    <a href="students.html">Registered Students</a> |
+    <span id="authLinks"></span>
+  </nav>
+
+  <main class="container">
+    <h1>Welcome to Complaint Management System</h1>
+    <p>Simple app for submitting and tracking complaints. Two roles: <strong>User</strong> and <strong>Admin</strong>.</p>
+
+    <div id="homeBox">
+      <p id="homeMsg">Please login to access complaints features.</p>
+      <div id="homeActions">
+        <input id="li-username" placeholder="username">
+        <input id="li-password" type="password" placeholder="password">
+        <button id="loginBtn">Login</button>
+        <button id="logoutBtn" class="hidden">Logout</button>
+      </div>
+      <p class="small">Or <a href="register.html">register</a> a new account.</p>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+  <script>
+    // wire up home login button
+    document.getElementById("loginBtn").addEventListener("click", async () => {
+      const u = document.getElementById("li-username").value.trim();
+      const p = document.getElementById("li-password").value;
+      await signupOrLogin.login(u, p);
+    });
+    document.getElementById("logoutBtn").addEventListener("click", () => signupOrLogin.logout());
+    setupNav(); // show correct nav state
+  </script>
+</body>
+</html>
