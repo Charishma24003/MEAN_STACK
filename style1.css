@@ -1,10 +1,7 @@
 body{
     margin: 0%;
     padding: 0%;
-    background-size: cover;      /* Scales image to cover entire screen */
-  background-repeat: no-repeat;
-  background-position: center; /* Centers the image */
-  background-attachment: fixed;
+   
 }
 
 
@@ -19,20 +16,22 @@ header{
     align-items: center;
     
     margin: 0%; */
+    /* background-color: #F8F8F8; */
     display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white;
+  padding: 25px 50px;
+  background-color: #800020;
+  color: #D4AF37;
   position: fixed;
   top: 0;
-  width: 100%;
+  position: sticky;
     
 }
 
 header h1 {
     font-size: 54px;
+    font-family: poppins, sans-serif;
     margin: 0;
     color: white;
     text-align: center;
@@ -46,7 +45,7 @@ header nav{
 
 }
 nav a {
-    color: #fdf8f7;
+    color: #F5E9D3;
     text-decoration: none;
     margin: 0 15px;
     font-weight: bolder;
@@ -54,7 +53,8 @@ nav a {
 
 nav a:hover {
     text-decoration: underline;
-    color: #fff;
+    color:  #FFD700;
+    font-size: 20px;
     border-radius: 4px;
     transition: 0.5s;
     transform: scaleX(3.5);
@@ -76,91 +76,40 @@ nav a:hover {
 }
 
 .about{
-    max-width: 800px;
-    margin: 50px 0px 20px 500px;
-    font-size: 25px;
-    font-family: cursive;
+    max-width: 40%;
+    margin: 20px 0 auto;
     padding: 20px;
-   color: #FFF3E0;
+    text-align: center;
+    /* margin: 50px 0px 20px 500px; */
+    font-size: 25px;
+    font-family: fantasy;
+    padding: 20px;
+   color: #F8F8F8;
     /*background-color: #FFF3E0; Light peach background */
     border-radius: 8px;
-    background-color: rgba(75, 74, 74, 0.6);
-    backdrop-filter: blur(4px);
+    /* background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px); */
 }
 
-.about:hover{
-    transition: 0.5s;
-transform:scale(1.05);
+
+
+.dish_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(1px);
+    margin: 20px 0;
 }
 
-.hero-slider {
-    position: relative;
-    height: 90vh;
-    overflow: hidden;
-  }
-  .slide {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-  }
-  .slide.active {
-    opacity: 1;
-    z-index: 1;
-  }
-  .overlay {
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.4);
-  }
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 20px;
-  }
-  .hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 15px;
-  }
-  .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 25px;
-  }
-  .hero-buttons {
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .btn-primary, .btn-secondary {
-    padding: 12px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-  }
-  .btn-primary {
-    background-color: #ff7043;
-    color: white;
-  }
-  .btn-primary:hover {
-    background-color: #e64a19;
-  }
-  .btn-secondary {
-    background-color: #ffd54f;
-    color: black;
-  }
-  .btn-secondary:hover {
-    background-color: #fbc02d;
-  }
+main.dish_section img{
+    font-family: fantasy;
+    /* background-color: #FFF3E0; Light peach background */
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+}
+
+
 
