@@ -116,6 +116,34 @@ main{
     transition: 0.3s;
 }
 
+/* .menu_category{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid gray;
+    object-fit: cover;
+
+} */
+.category{
+    --gap:20px;
+    --num-cols: 4;
+    --row-heigth:300px;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows:var(--row-heigth);
+    gap:var(--gap);
+}
+
+.category > img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
 
 
 
