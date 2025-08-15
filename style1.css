@@ -1,10 +1,13 @@
-body{
+*{
     margin: 0%;
     padding: 0%;
-    background-color: #FFF8E7;
+    box-sizing: border-box;
+    /* background-color: #FFF8E7; */
    
 }
-
+body{
+    background-color: #FFF8E7;
+}
 
 
 header{
@@ -27,7 +30,7 @@ header{
   position: fixed;
   top: 0;
   position: sticky;
-    
+   z-index: 10; 
 }
 
 header h1 {
@@ -39,10 +42,10 @@ header h1 {
 }
 
 header nav{
-    display: flex
-    gap: 20px;
-    padding: 10px 20px;
-    align-items: center;
+    display: flex;
+    gap:20px;
+    padding:10px 20px;
+    align-items:center;
 
 }
 nav a {
@@ -69,29 +72,43 @@ nav a:hover {
   object-fit: cover;
 }
 
-.tagline {
-    font-size: 24px;
-    color: #5D4037;
-    
-    margin: 20px 0;
+main{
+    width: 95%;
+    height: 700px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow:0px 0px 5px gray;
+    position: relative;
+    overflow: hidden;
 }
 
-.about{
-    max-width: 40%;
-    margin: 20px 0 auto;
-    padding: 20px;
+.slide{
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    position: absolute;
+}
+
+.nav1{
     text-align: center;
-    /* margin: 50px 0px 20px 500px; */
-    font-size: 25px;
-    font-family: Merriweather, serif;
-    padding: 20px;
-   color: #fd8e7f;
-    /*background-color: #FFF3E0; Light peach background */
-    border-radius: 8px;
-    /* background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(1px); */
+    margin-top: 15px;
 }
 
+.nav1 button{
+    font-size: 20px;
+    padding:8px 15px ;
+    margin: 0 5px  ;
+    background:#f4f4f4;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    color: #6B4F4F;
+}
+
+.nav1 button:hover{
+    background: #6B4F4F;
+    color: white;
+    transition: 0.3s;
+}
 
 
 
