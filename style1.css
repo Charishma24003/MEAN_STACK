@@ -89,22 +89,28 @@ main{
  
 }
 
-.nav1{
-    text-align: center;
-    margin-top: 15px;
+.slideArrow{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 20px;
+    box-sizing: border-box;
+    
 }
 
-.nav1 button{
+.slideArrow button{
     font-size: 20px;
     padding:8px 15px ;
     margin: 0 5px  ;
-    background:#f4f4f4;
+    background:#fd8e7f;
     border: 1px solid #ccc;
     cursor: pointer;
     color: #6B4F4F;
 }
 
-.nav1 button:hover{
+.slideArrow button:hover{
     background: #6B4F4F;
     color: white;
     transition: 0.3s;
