@@ -61,7 +61,7 @@ nav a:hover {
     font-size: 20px;
     border-radius: 4px;
     transition: 0.5s;
-    transform: scaleX(3.5);
+    transform: scaleX(1.0);
     padding: 7px;
 }
 

@@ -41,7 +41,7 @@ function previousSlide(){
     }
     counter--;
     slideImage();
-}
+    }
   
 
 
@@ -53,6 +53,15 @@ document.querySelector("main").addEventListener("mouseenter",()=>{
 });
 document.querySelector("main").addEventListener("mouseleave",()=>{
     autoSlide=setInterval(nextSlide,3000);
+});
+
+document.getElementById("nextBtn").addEventListener("click", () => {
+    nextSlide();
+    resetAutoSlide();
+});
+document.getElementById("prevBtn").addEventListener("click", () => {
+    prevSlide();
+    resetAutoSlide();
 });
 
 function resetAutoSlide() {
