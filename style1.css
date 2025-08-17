@@ -81,13 +81,16 @@ nav a:hover {
 }
 
 .slide{
-    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;    transition: transform 1s ease-in-out;
+
+
 }
 
 .slide img{
     width: 100%;
     height: 100%;
-    transition: transform 1s ease-in-out;
     
     object-fit: cover;
     display: block;
