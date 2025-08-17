@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Savory Score</title>
     <link rel="stylesheet" href="style1.css">
   
 </head>
@@ -28,7 +28,7 @@
             <div class="slide-text">
                 <h2>Welcome to Savory Score</h2>
                 <p>Your ultimate destination for discovering and rating the best dishes in town!</p>
-                 <p>Every dish is crafted with love, using the finest ingredients to bring authentic flavors to your table.</p>
+                
             </div>
         </div>
 
@@ -68,29 +68,60 @@
 
        <div class="slideArrow">
             <button onclick="previousSlide()">
-                <<<
+                ◀
             </button>
 
             <button onclick="nextSlide()">
-                >>>
+                ▶
             </button>
         </div>
 
    </main>
-        <div class="menu_category">
-            <div class="category">
-                <img src="images/pic3.jpg" alt="Appetizer">
-                <img src="images/pic13.jpg" alt="Maincourse">
-                <img src="images/dessert.jpg" alt="Dessert">
-                <img src="images/pic7.jpg" alt="beverage">
 
+   <h1 style="text-align: center; font-size: 24px;color:#6B4F4F;background-color:#fd8e7f ; margin: 50px 0;">Explore Our Menu</h1>
+
+    <div class="menu_category">
+        <div class="category">
+            <img src="images/pic3.jpg" alt="Appetizer" class="hov_img"  >
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Appetizer</h3>
+                </div>
             </div>
-
         </div>
-        <script src="app.js" ></script>
 
-    <footer>
+        <div class="category">
+            <img src="images/pic13.jpg" alt="Maincourse" class="hov_img">
+            <div class="black_shade"></div>                
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Main Course</h3>
+                </div>
+            </div>
+        </div>
 
-    </footer>
+        <div class="category">
+            <img src="images/dessert.jpg" alt="Dessert" class="hov_img">
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Dessert</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="category">
+            <img src="images/pic7.jpg" alt="beverage" class="hov_img">
+            <div class="black_shade"></div>
+            <div class="category_shade">
+                <div class="category_text">
+                    <h3>Beverage</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js" ></script>
 </body>
 </html>
