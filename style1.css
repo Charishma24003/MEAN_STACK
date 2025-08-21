@@ -241,24 +241,6 @@ nav a:hover {
 
 
 /* Registration Styling */
-.regMain{
-    background-color: aqua;
-   width: 80%;
-    margin: 50px 50px;
-    height: 850px;
-    box-shadow:0px 0px 15px gray;
-    position: relative;
-    overflow: hidden;
-}
-
-.regForm{
-    position: absolute;
-    width: auto;
-    height:auto;    
-    transition: transform 1s ease-in-out;
-    object-fit: cover;
-    display: block;
-}
 
 
 
